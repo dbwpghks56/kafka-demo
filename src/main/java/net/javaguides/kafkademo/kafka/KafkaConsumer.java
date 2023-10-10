@@ -15,7 +15,7 @@ public class KafkaConsumer {
 //        log.info(String.format("receive Message %s", message));
 //    }
 
-    @KafkaListener(topics = "javaguides_json", groupId = "myGroup")
+    @KafkaListener(topics = "${spring.kafka.topic.name}", groupId = "myGroup")
     public void consumeJson(User user) {
         log.info(String.format("receive json Message %s", user.toString()));
     }

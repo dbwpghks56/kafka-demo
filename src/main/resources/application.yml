@@ -17,3 +17,5 @@ spring:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       bootstrap-servers: localhost:9092
 
+    topic:
+      name: 'javaguides_json'
